@@ -1,0 +1,48 @@
+Component&DataBinding
+---------------------
+To transfer data between components.
+Create a object for EventEmitter and set it to output module
+@Output() transferVal = new EventEmitter<type>();
+
+transferVal.emit(contentToTransfer);
+always emit 
+
+In the selector in html. Get the transferVal and use it
+(transferVal) = method($event)
+
+To send the values outside of a components use @Output to pass it into a components use @Input
+
+to use a input, we have to property binding in selector to bind the data
+
+[element] = "value"
+
+@Input() element: any;
+use this element in the new componenet with eht @input
+
+@Input('alias Name') -  this the source element name. Then by assigning new name we can use the component
+[refElement] = "value"
+@Input('refElement') element: any;
+
+
+ElementRef, ViewChild
+---------------------
+Taking the reference element from XML using core module 
+
+@ViewChild('var') var: ElementRef
+
+const instead of let when we not choosing to change the value of data
+
+PROJECT
+--------
+
+Encapsulation:
+---------
+for style
+
+viewEncapsultaion add in the class decorator
+It has threee modes
+encapsulation: viewEncapsultaion.none -- emulated, native
+
+None- disable all the view attributes for the specirfic componenet
+Emulated - styles will be applied globally
+Native - shadow dom technology , same as emulated for supported browser

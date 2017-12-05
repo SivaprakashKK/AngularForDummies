@@ -1,0 +1,101 @@
+Basics
+------
+
+Cli creates a root component which will tie the entire application into one
+
+@Component - decorator
+
+How it works
+------------
+1)main file is the first file which starts that is initiated by the javascript bundles included in the last of the index.html by angular cli
+2) main file imports the app.module and bootstraps it
+3) app.module imports app.component which defines the selector, template url and css
+
+
+Component
+---------
+Component is the root, which we will use to build out own components
+server name should be component name and should be inside app
+
+Decoratots are used to enchance the ts classes
+
+AppModule
+----------
+Component used to build web pages
+Modules to bundle the different piece to package
+
+component created has to be registered here
+in the decorator declarations
+imports are to import the other modules
+browsermodule is for basic browser functionalities
+
+emmet plugin
+
+Creaet component using Cli
+---------------------------
+ng g c component_name
+
+components can be nested 
+
+selectors can be used in 3 ways element, attribute, classes
+element - selector: 'app-server'
+classes - selector: './app-server'
+attribute - selector: '[app-server]'
+
+styles and template can be added inline in ts
+
+DAta binding
+--------------
+communication
+
+String interporlation {{string}}
+property binding	[data]
+event binding (click)  = funciton()
+
+
+(args) => {def} -> Arrow funciton ES 6\
+
+String interporlation - {{}} to display the data
+Property binding - [disabled] to use the html property tags
+Event binding - (click) to use html events to get the dom actions
+two way binding - [(ngModel)] 
+
+
+DIRECTIVES
+----------
+All components are directives
+
+ngIf is a default directives
+All directive use attribute property
+*ngIf - structural directive: changes the structure of dom
+
+*ngIf-"bool; else marker"
+<ng-template marker>
+
+<p *ngIf="serverCreated; else noServer">Server created, Name is {{serverName}}</p>
+<ng-template #noServer>
+  <p>No Server created</p>
+  </ng-template>
+  
+ 1) Strucutral directive 2) attribute directive
+ 
+ ngStyle directive - we will use the property of ngStyle [ngStyle]
+ 
+ 
+ 
+ Project
+ --------
+ list-group-item
+ list-group-heading
+ list-group-text
+ 
+ <img src="{{}}" or [iSrc] = ""
+ 
+ dropdown-toggle
+ dropdown-menu
+ 
+ export class Ingredient {
+  constructor(public name: string, public amount: number) {}
+}
+
+ng g c name --spec false

@@ -1,0 +1,51 @@
+															Angular 4
+															----------
+Javascript framework for SPA
+
+Angular CLI
+-----------
+Commands to create project
+Build for production
+Typeset is a super script of JS, has to be compiled befor if it runs in browser. This is done by CLI
+
+
+Node JS
+-------
+Dev server - for testing
+CLI requires this
+No server side coding in angular for now
+
+ng-server
+---------
+development server
+compiles the ts to js
+
+
+Folder
+------
+outside files - configuration 
+e2e - end to end testings
+src - my project
+	index.html - Single page
+	assests - images etc,,
+	environments - 
+	app - important folder
+	
+	
+app
+---
+Component is used to build our web application
+app.component is the initial page
+
+ts - business logic
+html - view
+
+Typescript
+-----------
+type of variable
+cli compiles the ts to js
+
+To add bootstrap
+npm install bootstrap -s
+angular-cli.json - add in styles array
+node_module has all the 3rd party dependency

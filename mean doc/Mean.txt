@@ -1,0 +1,21 @@
+MEAN
+----
+
+ng new mean
+ng build
+npm install express body-parser --save
+
+create server.js
+
+mongodb download
+mongod.exe
+mongo.exe
+
+use mean
+db.users.insert({"name":"Johnn Doe"})
+
+npm install mongodb --save
+
+
+C:\Program Files\MongoDB\Server\3.4\bin>
+mongod.exe --dbpath "C:\Program Files\MongoDB\Server\3.4\data"
